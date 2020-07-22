@@ -22,7 +22,8 @@ selecting View > Syntax > Open all with current extension as... > Groovy
 
 */
 
-task groovy {}
+task groovy {}  // This line gives a name to the Groovy program, so that it be called using gradle
+// task rc {}  // If this line is uncommented and the previous line is commented out, then the command to run this file become: $ gradle rc
 
 println "Hello Groovy!"
 
