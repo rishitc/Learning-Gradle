@@ -26,12 +26,19 @@ Challenges:
   3. Modify the action of this task so it instead prints your name.
   4. Figure out my favorite type of candy.
 
+REMEMBER: This build script delegates the already built-in project object
 */
 
-task hello {
+task hello {  // This is a configuration closure; it delegates the task object
+
+    // These are function calls which set the value of the attributes
+    // with the same exact name, i.e. description is a setter for the
+    // description attribute
     description "Hey student! Run this one :D"
     group "Our Demos"
-    doLast {
+    
+    // List of actions the task will perform
+    doLast {  // This is a closure
         // println "Hello World!"
         println "My name is Rishit."
     }
